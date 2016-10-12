@@ -56,8 +56,7 @@ public class TriangleControllerTests {
 
     @Test
     public void paramTriangleShouldReturnOK() throws Exception {
-        this.mockMvc.perform(get("/greeting").param("a", "16").param("b", "1").param("c", "2"))
-                .andDo(print())
+        this.mockMvc.perform(get("/triangle").param("a", "16").param("b", "1").param("c", "2"))
                 .andExpect(status().isOk());
     }
 

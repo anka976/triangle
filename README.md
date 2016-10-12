@@ -18,4 +18,4 @@ In case of invalid input API returns response with status 400, "Bad Request" and
 Sample error response: 
 ![Error view](https://raw.githubusercontent.com/anka976/triangle/master/src/main/resources/Screen%20Shot%202016-10-12%20at%2019.55.52.png "Error view")
 
-To run tests execute command `mvn test`
+To run tests separately execute command `mvn test`
