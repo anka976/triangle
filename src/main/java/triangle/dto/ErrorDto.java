@@ -1,6 +1,7 @@
 package triangle.dto;
 
 /**
+ * Error dto for rest JSON
  * Created by anna.kulikova on 11/10/2016.
  */
 public class ErrorDto {

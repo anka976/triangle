@@ -9,8 +9,24 @@ import triangle.dto.TriangleDto;
  */
 @Service
 public class TriangleService {
-    private enum TRIANGLE {EQUILATERAL, ISOSCELES, SCALENE}
+    /**
+     * Triangle types: EQUILATERAL, ISOSCELES or SCALENE
+     */
+    enum TRIANGLE {
+        EQUILATERAL, ISOSCELES, SCALENE
+    }
 
+    /**
+     * Computes triangle type by it sides lengths
+     *
+     * @param a positive number for the triangle side length
+     * @param b positive number for the triangle side length
+     * @param c positive number for the triangle side length
+     * @return TriangleDto with message whether the triangle is EQUILATERAL, ISOSCELES or SCALENE
+     * @throws IllegalArgumentException if sides are not positive
+     * @throws NullPointerException     if sides are null
+     * @see TriangleDto
+     */
     public TriangleDto getTriangle(Double a, Double b, Double c) {
         if (a <= 0 || b <= 0 || c <= 0) {
             throw new IllegalArgumentException("Triangle sides should be greater than zero");
